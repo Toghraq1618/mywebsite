@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: fit-content;
+    /* position: fixed;
+    top: auto; */
+
+}
+.container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;  
+    padding-bottom: 30px;  
+}
+.container nav>ul{
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+
+.container li{
+    /* border: 2px solid orange; */
+    padding: 15px;
+}
+
+.logo{
+    margin: 10px 10px;
+}
+
+.side-bar ul{
+    border-right: none;
+}

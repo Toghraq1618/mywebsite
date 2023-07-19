@@ -1,5 +1,5 @@
 :root{
-    --primary-color: #474B4F;
+    --primary-color: #E8DCB8;
     --secondary-color:#6B6E70;
     --tertinary-color: #222629;
     --quaternary-color: #61892F;
@@ -20,14 +20,15 @@ body{
 }
 
 header{
-    background-color: var(--tertinary-color);
+    background-color: var(--secondary-color);
     height:70px;
-    color:#ffff;
+    color: #ffff;
     display: flex;
     justify-content: center;
+    
 }
 .logo{
-color: var(--quaternary-color);
+color: var(--quinary-color);
 }
 .container{
     /* border:2px solid orange; */
@@ -69,12 +70,16 @@ li>a:hover{
 .side-bar{
     height: 100%;
     width: 200px;
-    /* border:2px solid yellow; */
-    border-right: 3px solid var(--quaternary-color);
+    color: var(--tertinary-color);
+    
+}
+.side-bar a{
+    color: var(--tertinary-color);
 }
 
-.side-bar>ul{
-    /* border:2px solid greenyellow; */
+.side-bar ul{
+    border-right: 3px solid var(--quinary-color);
+    height: max-content;
     display: flex;
     flex-flow:column;
     justify-content: flex-start;
@@ -85,4 +90,25 @@ li>a:hover{
     font-size: 1.5rem;
     font-weight: lighter;
     padding:15px;
+}
+
+footer{
+    width:100%;
+    height:70px;
+    background-color: var(--secondary-color);
+    position:relative;
+    bottom:0px;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+padding: 10px 20px 10px 20px;
+/* border: 2px solid greenyellow; */
+}
+footer a:hover{
+    color: var(--quinary-color);
 }
